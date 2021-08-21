@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    padding-top: 3rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.add {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: aquamarine;
+
+}
+
+.add:hover {
+    background-color: #83eeb3;
+}
+
+.note {
+    margin: 1.5rem;
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.note__date {
+    font-size: .8rem;
+}
+.create__date,
+.edit__date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.create__date p,
+.edit__date p {
+    margin-right: .5rem;
+}
+
+.note__tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    text-align: right;
+    background-color: aquamarine;
+}
+
+.note__tools button {
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.note__delete {
+    margin-left: .7rem;
+    margin-right: .5rem;
+}
+
+.note__main {
+    width: 100%;
+    height: 600px;
+    padding: 1.6rem 1rem 1rem 1.6rem;
+    overflow: auto;
+}
+
+.note__textarea {
+    height: 548px;
+    width: 100%;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: aliceblue;
+    border: none;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .note {
+        margin: 1rem 0;
+        height: 400px;
+    }
+}
